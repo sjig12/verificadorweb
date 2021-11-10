@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repruebe a Octavio por favor</title>
+    <style>
+        div {
+            height: 450px;
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-style: normal;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+		
+		
+    </style>
+
+    <script type="text/javascript">
+
+        if (window.addEventListener) {
+            var codigo = "";
+            window.addEventListener("keydown", function (e) {
+                codigo += String.fromCharCode(e.keyCode);
+                if (e.keyCode == 13) {
+                    window.location = "mostrar_producto.php?codigo=" + codigo;
+                    codigo = "";
+                }
+            }, true);
+        }
+    </script>
+</head>
+
+<body style="background-color: #ACD612;">
+    <br>
+    <br>
+    <br>
+    <h1>Súper del Sur</h1>
+    <br>
+    <br>
+    <div>
+        <img src="img/barcode-scan.gif" alt="" width="" height="">
+    </div>
+    <br>
+    <br>
+    <h1>Favor de pasar el código de barras debajo del escáner</h1>
+</body>
+
+</html>
